@@ -1,0 +1,17 @@
+{% extends 'login_out/base.html' %}
+  {% block body_block %}
+    <div class="jumbotron">
+      {% if registered %}
+        <h1 class="display-4">THANK YOU FOR REGISTERING WITH US!!</h1>
+      {% else %}
+        <h1 class="display-4">PLEASE SIGNUP HERE</h1>
+        <br>
+        <form method="POST">
+          {{ user_form.as_p }}
+          {{ profile_form.as_p }}
+          {% csrf_token %}
+          <button type="submit" class="btn btn-primary btn-lg">REGISTER</button>
+        </form>
+      {% endif %}
+    </div>
+  {% endblock %}

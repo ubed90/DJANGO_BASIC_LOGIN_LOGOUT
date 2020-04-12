@@ -1,0 +1,11 @@
+{% extends 'login_out/base.html' %}
+  {% block body_block %}
+    <div class="jumbotron">
+      <h1 class="display-4">PLEASE ENTER CREDENTIALS!!</h1>
+      <form action="{% url 'login_out:user_login' %}" method="POST">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary btn-lg">LOGIN</button>
+      </form>
+    </div>
+  {% endblock %}
