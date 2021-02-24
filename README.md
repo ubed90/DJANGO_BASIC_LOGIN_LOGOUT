@@ -6,12 +6,12 @@ USERNAME : theUNNOTICED
 PASSWORD : basic0987
 
 ## Installation 
-> pip install virtualenv
-> virtualenv env
-> pip install django
+> pip install virtualenv <br>
+> virtualenv env <br>
+> pip install django <br>
 > pip install django[argon2] or python -m pip install argon2-cffi
 
 ## Running Purpose :-
-> python manage.py makemigrations
-> python manage.py migrate
+> python manage.py makemigrations <br>
+> python manage.py migrate <br>
 > python manage.py runserver
